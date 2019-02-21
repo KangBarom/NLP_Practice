@@ -54,6 +54,12 @@ word2vec_git.ipynb를 따르면 학습이 되지 않은 단어를 분류하는 �
 
 이 방법 또한 이론적으론 online learning이 가능하지만 gensim api에서 online learning으로 단어 학습하는 작업이 쉽지 않기 때문에 fasttext를 활용하기로 하였다.
 
-# 세번째 작업 fasttext를 활용 
+# 세번째 작업 fasttext를 활용  
+Skip-gram 기반의 모델인 fasttext를 활용한다. 위 모델은 없는 단어가 나올 때 지속적으로 word를 발전 시킬 수 있다는 장점이 있다.  
+1.https://github.com/facebookresearch/fastText/blob/master/docs/crawl-vectors.md 에서 English: bin, text 두가지를 다운 받는다.  
+2.word2vec_git.ipynb를 참고해서 속하지 않은 단어를 찾아낸다. (+ 오타검증은 옵션)  
+3.fasttext학습.ipynb를 참고해서 속하지 않은 단어 (oov)를 크롤링한다.  
+4.fasttext학습.ipynb를 참고해서 oov학습을 진행한다. 
+5.fasttext학습.ipynb를 참고해서 oov가 학습된 모델을 불러 word embedding에 활용한다.
 
 
