@@ -63,3 +63,15 @@ Skip-gram 기반의 모델인 fasttext를 활용한다. 위 모델은 없는 단
 5.fasttext학습.ipynb를 참고해서 oov가 학습된 모델을 불러 word embedding에 활용한다.
 
 
+# 네번째 작업 InferSent를 활용하여 unsupervised learning활용
+두번째, 세번째 작업을 완료한 후 이 작업을 시행해야한다. 이 작업은 fasttext로 word embedding 되어 학습된 InferSent를 활용한다.  
+그리고 우리가 작업한 fasttext weight로 word embedding을 진행한다.  
+즉, fasttext로 pretrained된 InferSent 모델을 가져와서 word embedding만 우리가 작업한 fasttext로 대체하는 작업이다.  
+1.https://github.com/facebookresearch/InferSent.git 다운을 받는다.   
+2.설치 후 InferSent의 root로 들어간 후 아래의 코드를 쳐서 InferSent의 pretrained된 sentece weight를 받자.  
+<code> curl -Lo encoder/infersent2.pickle https://dl.fbaipublicfiles.com/infersent/infersent2.pkl</code>  
+3.NLP_Practice/NLP_processing/skipgram 안에 데이터들을 1번에서 설치한 InferSent root에 옮겨 놓는다.  
+4.NLP_Practice/NLP_processing/infersent사용하기.ipynb jupyter notebook 파일을 참고하여 전체 과정을 이해한다.  
+5.NLP_Practice/infersent/unsuperviese_test.py를 1번에서 설치한 InferSent root에 옮겨 놓는다. 
+6.unsuperviese_test.py 를 시행한다.  
+<code></code>
