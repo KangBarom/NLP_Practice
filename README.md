@@ -59,7 +59,7 @@ Skip-gram 기반의 모델인 fasttext를 활용한다. 위 모델은 없는 단
 1.https://github.com/facebookresearch/fastText/blob/master/docs/crawl-vectors.md 에서 English: bin, text 두가지를 다운 받는다.  
 2.word2vec_git.ipynb를 참고해서 속하지 않은 단어를 찾아낸다. (+ 오타검증은 옵션)  
 3.fasttext학습.ipynb를 참고해서 속하지 않은 단어 (oov)를 크롤링한다.  
-4.fasttext학습.ipynb를 참고해서 oov학습을 진행한다. 
+4.fasttext학습.ipynb를 참고해서 oov학습을 진행한다.   
 5.fasttext학습.ipynb를 참고해서 oov가 학습된 모델을 불러 word embedding에 활용한다.
 
 
