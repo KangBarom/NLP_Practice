@@ -74,4 +74,4 @@ Skip-gram 기반의 모델인 fasttext를 활용한다. 위 모델은 없는 단
 4.NLP_Practice/NLP_processing/infersent사용하기.ipynb jupyter notebook 파일을 참고하여 전체 과정을 이해한다.  
 5.NLP_Practice/infersent/unsuperviese_test.py를 1번에서 설치한 InferSent root에 옮겨 놓는다. 
 6.unsuperviese_test.py 를 시행한다.  
-<code></code>
+
